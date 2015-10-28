@@ -1,4 +1,4 @@
 function something() {
-    document.GetElementByID('dialog').innerHTML = "Look I have changed";
+    document.GetElementById('dialog').innerHTML = "Look I have changed";
     alert("Something Happened!");
 	}
