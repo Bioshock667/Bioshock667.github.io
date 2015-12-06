@@ -8,9 +8,14 @@
 		<meta name="description" content="">
 		<meta name="author" content="">
 		<title>Company of Heroes Homepage</title>
+		<style>
+			body {
+					background-image:url("img/company_of_heroes_coh_soldiers_2044_2560x1024.jpg");
+				}
+		<style>
 		<script src="jquery-1.11.3-dev.js"></script>
 		<link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap.min.css">
-		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="shortcut icon" href="img/coh.ico">
 	</head>
 	<body>
 		<div class="container">
@@ -32,12 +37,12 @@
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Factions and Game Modes<span class="caret"></span></a>
 								<ul class="dropdown-menu">
-									<li><a href="#">American</a></li>
-									<li><a href="#">Wehrmacht</a></li>
-									<li><a href="#">British</a></li>
-									<li><a href="#">Panzer Elite</a></li>
+									<li><a href="america.html">American</a></li>
+									<li><a href="wehrmacht.html">Wehrmacht</a></li>
+									<li class="active"><a href="british.html">British</a></li>
+									<li><a href="pElite.html">Panzer Elite</a></li>
 									<li role="separator" class="divider"></li>
-									<li><a href="#">Game Modes</a></li>
+									<li><a href="gModes.html">Game Modes</a></li>
 								</ul>
 						</li>
 						<li><a href="about.html">About This Site</a></li>
@@ -48,10 +53,15 @@
 			</nav>
 			<div class="jumbotron">
 				<h1>Welcome to the Home Page!</h1>
-				<p>This website is a CSE 322 Fall 2015 project <small>more on how the website on the About This Site" section</small>.</p>
+				<p>Welcome to an unofficial fan-made website about Company of Heroes, a WWII-themed Real-Time Strategy game.
+				Feel free to look around!</p>
+				<p<i>This website is a CSE 322 Fall 2015 project <small>more on how the website on the About This Site" section</small>.</i></p>
 			</div>
-			<audio src="hellmarch.mp3">The browser doesn't support this audio!</audio>
-		<div>
+			<audio controls>
+				<source src="hellmarch.mp3">
+				The browser doesn't support this audio!
+			</audio>
+		</div>
 		<script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
 		<script src="index.js"></script>
 	</body>
