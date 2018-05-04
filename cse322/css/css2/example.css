@@ -1,0 +1,49 @@
+#container {
+    border: 1px solid blue;
+    width: 100%;
+    padding-bottom: 20px;
+    background-image: url(http://pcm.my-magazine.me/main/upload/wallpaper_resources/5187a26f0a8ab/5efcef118c3ff4a49b390beb2893b1f8bf205ce4.jpg);
+    height:100%;
+    
+}
+#title {
+    
+    background-color: lightblue;
+    text-align:center;
+    font-family: cursive;
+    font-size: large;
+}
+#list {
+    background-color:lightyellow;
+    border: 1px solid orange;
+    float: left;
+    top:30px;
+    }
+#article {
+    background-color: lightgreen;
+    clear:left;
+    padding-bottom: 5px;
+}
+#article>p {
+    margin-left: 10px;
+}
+ul {
+    position: relative;
+    left:-20px;
+}
+#header {
+    background-color:black;
+    color: white;
+}
+img {
+    width:200px;
+    float: right;
+    margin: 5px;
+}
+#footer {
+    width: 100%;
+    bottom:0;
+    position:fixed;
+    background-color: yellow;
+    text-align: center; 
+}

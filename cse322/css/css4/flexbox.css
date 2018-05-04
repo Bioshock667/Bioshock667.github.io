@@ -1,0 +1,37 @@
+div {
+    border: 1px solid;
+}
+img {
+    float:left;
+    margin:5px;
+}
+#container {
+    display: -webkit-flex;
+    display: flex;
+    
+}
+#left-column {
+    -webkit-flex:none;
+    flex:none;
+    width:25%;
+}
+#middle-column {
+    -webkit-flex:2;
+    flex:2;
+}
+#upper {
+    overflow:auto;
+}
+#center {
+    text-align:center;
+    font-size:30px;
+    padding:20px;
+}
+#lower {
+    padding: 10px;
+}
+#right-column {
+    -webkit-flex:1;
+    flex:1;
+}
+    

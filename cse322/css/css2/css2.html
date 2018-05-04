@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>CSS 6-10</title>
+        <link type='text/css' rel='stylesheet' href='css2.css'>
+    </head>
+    <body>
+        <h1>
+            Box Styles and More!
+        </h1>
+        <p>Constanting adjusting width while tinkering other properties can be
+        a real pain but now box-sizing can keep those 'boxes' at a constant width with
+        other properties changed.</p>
+        <div class= 'padding' id='main'>Keep the width constant ...</div>
+        <div class= 'padding' id='padded'>... While adjusting the padding to your liking!</div>
+        <div id='static'>By default, most ojects have static positioning where they are no positioned 
+        in a specific way.</div>
+        <div class='relative'>
+            <p>With relative positioning, objects are positioned relative to its determined position.
+            It this div's case, its top, left, down, and right properties are unchanged so it's position like
+            a static object.</p>
+            </div>
+        <div id='relative1'>Now this div had been adjusted away from its normal position.</div>
+        <div id='fixed'>This div is in a fixed position so it stays in your window and follows you.</div>
+        <div class='static'>
+            <p>Here is a static div with a div child</p>
+            <div class='absolute'>this div is absolutely positioned to this static div.</div>
+            </div>
+        <div class='relative'>
+            <p>Here is a relative div with a div child.</p>
+            <div class='absolute'>This div is absolutely positioned to a relatively positioned div.</div>
+        </div>
+        <br>
+        <a href='example.html'>Here is an example in action.</a>
+    </body>

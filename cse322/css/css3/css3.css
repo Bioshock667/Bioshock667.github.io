@@ -1,0 +1,41 @@
+    div {
+        border: 1px solid;
+    }
+    #container {
+        background-color: lightgreen;
+        overflow:auto;
+    }
+    #title {
+        background-color:lightblue;
+        margin: 5%;
+    }
+    .article {
+        background-color:white;
+        width:50%;
+        float:left;
+    }
+    img {
+        width:300px;
+    }
+    #listTitle {
+        width: 400;
+        background-color:yellow;
+    }
+    .group {
+        
+        width: 100px;
+        display:inline-block;
+        background-color: lightblue;
+        text-align: center;
+        margin: 5px;
+    }
+
+@media screen and (max-width:549px) {
+    img {
+        display: inline-block;
+        width: 250px;
+    }
+    .group {
+        background-color: red;
+    }
+}

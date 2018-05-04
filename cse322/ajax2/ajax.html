@@ -1,0 +1,46 @@
+<html>
+<head>
+    <title>An Ajax Test with Github Markup</title>
+</head>
+<body>
+    <h2>Github Markup</h2>
+    <textarea id='input' rows=4 cols=50></textarea>
+    <button id='button'>Enter</button>
+    <p id='result'>Result goes here</p>
+    <script type='text/javascript'>
+        (function() {
+            var httpRequest;
+            document.getElementById('button').onclick = function () {
+                var string = document.getElementById('input').value;
+                makeRequest(string);
+            };
+            function makeRequest(string) {
+                httpRequest = new XMLHttpRequest();
+                if (!httpRequest) {
+                    alert('Giving up :( Cannot create an XMLHTTP instance');
+                    return false;
+                }
+                httpRequest.open('POST', 'https://api.github.com/markdown/raw');
+                httpRequest.setRequestHeader('Content-Type','text/plain');
+                httpRequest.send(string);
+                httpRequest.onreadystatechange = alertState;
+
+                
+            }
+              function alertState() {
+                if (httpRequest.readyState === XMLHttpRequest.DONE) {
+                    if (httpRequest.status === 200) {
+                        var result = httpRequest.responseText;
+                        document.getElementById('result').innerHTML = result;
+                        alert(httpRequest.responseText);
+                    }
+                    else
+                        alert(httpRequest.status);
+                    } else {
+                    alert('There was a problem with the request.');
+                    }
+                }
+        })();
+    </script>
+</body>
+</html>
