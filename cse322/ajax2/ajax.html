@@ -33,12 +33,12 @@
                     if (httpRequest.status === 200) {
                         var result = httpRequest.responseText;
                         document.getElementById('result').innerHTML = result;
-                        alert(httpRequest.responseText);
+                        console.log("Request Successful!!")
                     }
                     else
-                        alert(httpRequest.status);
+                        console.log(httpRequest.status);
                     } else {
-                    alert('There was a problem with the request.');
+                    console.log('There was a problem with the request. HTTP State:'+ httpRequest.readyState);
                     }
                 }
         })();
